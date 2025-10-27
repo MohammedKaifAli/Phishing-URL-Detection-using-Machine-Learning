@@ -1,0 +1,157 @@
+URL,Description,Status
+https://www.freecodecamp.org/news/how-to-get-started-with-firebase-using-python/,random description of the text,PASS
+https://www.example.com,random description of the text,PASS
+https://www.google.com,random description of the text,PASS
+https://www.github.com,random description of the text,FAIL
+https://www.python.org,random description of the text,PASS
+https://www.amazon.com,random description of the text,PASS
+https://www.microsoft.com,random description of the text,PASS
+https://www.nytimes.com,random description of the text,FAIL
+ttps://www.cnn.com,random description of the text,PASS
+https://www.twitter.com,random description of the text,PASS
+ttps://www.cnn.com,random description of the text,PASS
+https://www.twitter.com,random description of the text,PASS
+https://www.analyticsvidhya.com/blog/2021/08/python-tutorial-working-with-csv-file-for-data-science/,random description of the text,PASS
+https://www.analyticsvidhya.com/blog/2021/08/python-tutorial-working-with-csv-file-for-data-science/,random description of the text,PASS
+https://www.analyticsvidhya.com/blog/2021/08/python-tutorial-working-with-csv-file-for-data-science/,random description of the text,PASS
+nobell.it/70ffb52d079109dca5664cce6f317373782/login.SkyPe.com/en/cgi-bin/verification/login/70ffb52d079109dca5664cce6f317373/index.php?cmd=_profile-ach&outdated_page_tmpl=p/gen/failed-to-load&nav=0.5.1&login_access=1322408526,random description of the text,Legitimate
+nobell.it/70ffb52d079109dca5664cce6f317373782/login.SkyPe.com/en/cgi-bin/verification/login/70ffb52d079109dca5664cce6f317373/index.php?cmd=_profile-ach&outdated_page_tmpl=p/gen/failed-to-load&nav=0.5.1&login_access=1322408526,random description of the text,Phishing
+www.allandmedia.com/opencart/system/Cielo/index.html,random description of the text,Phishing
+https://github.com/Subrat11Pandey/Final-Year-Project,random description of the text,Phishing
+https://www.youtube.com/watch?v=6fF0JprSwK8,random description of the text,Legitimate
+www.google.com,random description of the text,Legitimate
+www.softcircuits.com/cygnus/,random description of the text,Legitimate
+www.github.com,random description of the text,Legitimate
+docs.google.com/spreadsheet/viewform?formkey=dE5rVEdSV2pBdkpSRy11V3o2eDdwbnc6MQ,random description of the text,Phishing
+www.spotify.com,random description of the text,Legitimate
+www.youtube.com,random description of the text,Legitimate
+www.bnmit.in,random description of the text,Phishing
+www.bnmit.org.in,random description of the text,Legitimate
+www.cmrit.ac.in,random description of the text,Legitimate
+www.cakepoint.ac.in,random description of the text,Legitimate
+www.rynocasino.com/,random description of the text,Legitimate
+www.coincoele.com.br/Scripts/smiles/?pt-br/Paginas/default.aspx,random description of the text,Phishing
+https://github.com/Subrat11Pandey/Final-Year-Project,random description of the text,Phishing
+https://github.com/Subrat11Pandey/Final-Year-Project,random description of the text,Phishing
+www.rynocasino.com/,random description of the text,Legitimate
+www.google.com,random description of the text,Legitimate
+www.google.com,random description of the text,Legitimate
+www.google.com,random description of the text,Legitimate
+ww.google.com,random description of the text,Phishing
+www.google.com,random description of the text,Legitimate
+https://www.amazon.com,random description of the text,Phishing
+www.google.com,random description of the text,Legitimate
+https://www.google.com,random description of the text,Phishing
+https://www.microsoft.com,random description of the text,Phishing
+www.google.com,random description of the text,Legitimate
+https://www.google.com,random description of the text,Phishing
+www.google.com,random description of the text,Legitimate
+www.google.com,random description of the text,Legitimate
+https://www.amazon.com,random description of the text,Phishing
+https://www.amazon.com,random description of the text,Phishing
+https://www.amazon.org,random description of the text,Legitimate
+https://www.amazon.com,random description of the text,Phishing
+https://www.youtube.com/watch?v=6fF0JprSwK8,random description of the text,Legitimate
+www.amazon.org,random description of the text,Legitimate
+http://www.amazon.org,random description of the text,Legitimate
+https://www.amazon..com,random description of the text,Phishing
+www.google.com,The URL is detected as legitimate with a confidence of 83.71%.,Legitimate,83.71252008225686
+ww.akask.in,"The URL is detected as phishing with a confidence of 91.87%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,91.86534739764524
+https://www.amazon.com,"The URL is detected as phishing with a confidence of 60.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,60.0
+https://www.amazon.org,The URL is detected as legitimate with a confidence of 80.00%.,Legitimate,80.0
+https://www.amazon.com,"The URL is detected as phishing with a confidence of 40.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,40.0
+https://www.google.org,The URL is detected as legitimate with a confidence of 87.00%.,Legitimate,87.0
+https://www.google.org,The URL is detected as legitimate with a confidence of 100.00%.,Legitimate,100
+www.google.com,The URL is detected as legitimate with a confidence of 100.00%.,Legitimate,100
+ww.akask.in,"The URL is detected as phishing with a confidence of 8.13%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,8.134652602354778
+www.amazon.in,"The URL is detected as phishing with a confidence of 39.37%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,39.36835300874094
+www.google.com,The URL is detected as legitimate with a confidence of 100.00%.,Legitimate,100
+www.google.com,The URL is detected as legitimate.,Legitimate,100
+www.google.by,The URL is detected as legitimate.,Legitimate,100
+www.google.by,The URL is detected as legitimate with a confidence of 100.00%.,Legitimate,100
+ww.google.b,"The URL is detected as phishing with a confidence of 0.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,0.0
+ww.google.by,"The URL is detected as phishing with a confidence of 7.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,7.000000000000001
+ww.akask.in,"The URL is detected as phishing with a confidence of 8.13%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,8.134652602354778
+www.amazon.in,"The URL is detected as phishing with a confidence of 39.37%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,39.36835300874094
+www.akask.com,The URL is detected as legitimate with a confidence of 100.00%.,Legitimate,100
+www.akask.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+www.akask.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+ww.akask.in,"The URL is detected as phishing with a confidence of 8.13%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,8.134652602354778
+www.akask.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+www.akask.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+www.akask.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+www.akask.com,random description of the text,Legitimate
+www.akask.com,random description of the text,Legitimate
+www.akask.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+www.kaif.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+www.akask.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+www.akask.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+https://www.amazon.com,"The URL is detected as phishing with a confidence of 60.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,60.0
+wwww.zywam.in,"The URL is detected as phishing with a confidence of 91.87%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,91.86534739764524
+https://www.google.org,The URL is detected as legitimate with a confidence of 87.00%.,Legitimate,87.0
+https://www.google.in,The URL is detected as legitimate with a confidence of 54.54%.,Legitimate,54.541414141414144
+https://www.google.in,The URL is detected as legitimate with a confidence of 100.00%.,Legitimate,100
+https://www.google.org,The URL is detected as legitimate with a confidence of 100.00%.,Legitimate,100
+ww.akask.in,"The URL is detected as phishing with a confidence of 91.87%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,91.86534739764524
+ww.akask.in,"The URL is detected as phishing with a confidence of 91.87%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,91.86534739764524
+www.akask.in,"The URL is detected as phishing with a confidence of 51.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,51.004169268376934
+www.akask.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+https://www.amazon.com,"The URL is detected as phishing with a confidence of 60.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,60.0
+www.amazon.com,The URL is detected as legitimate with a confidence of 100.00%.,Legitimate,100.0
+https://www.youtube.com/watch?v=6fF0JprSwK8,The URL is detected as legitimate with a confidence of 81.00%.,Legitimate,81.0
+www.google.com,The URL is detected as legitimate with a confidence of 83.71%.,Legitimate,83.71252008225686
+ww.google,"The URL is detected as phishing with a confidence of 100.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,100.0
+www.amazon.com,The URL is detected as legitimate with a confidence of 100.00%.,Legitimate,100.0
+www.reliance.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+www.google.com,The URL is detected as legitimate with a confidence of 83.71%.,Legitimate,83.71252008225686
+https://www.amazon.com/gp/product/B08N5WRWNW,"The URL is detected as phishing with a confidence of 58.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,57.99999999999999
+https://www.amazon.org/gp/product/B08N5WRWNW,The URL is detected as legitimate with a confidence of 79.00%.,Legitimate,79.0
+http://www.amaz0n-secure.com/account/login,"The URL is detected as phishing with a confidence of 98.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,98.0
+https://www.amazon.com/gp/product/B08N5WRWNW,"The URL is detected as phishing with a confidence of 58.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,57.99999999999999
+www.amaz0n-secure.com,The URL is detected as legitimate with a confidence of 86.34%.,Legitimate,86.33859649122806
+www.amaz0n-secure.com,The URL is detected as legitimate with a confidence of 86.34%.,Legitimate,86.33859649122806
+www.akashkaif.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+www.amaz0n.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+www.amaz0on.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+https://www.amazon.com,"The URL is detected as phishing with a confidence of 60.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,60.0
+https://www.youtube.com/watch?v=6fF0JprSwK8,The URL is detected as legitimate with a confidence of 81.00%.,Legitimate,81.0
+http://www.youtube.com/watch?v=6fF0JprSwK8,The URL is detected as legitimate with a confidence of 67.00%.,Legitimate,67.0
+https://www.youtube.com/watch?v=6fF0JprSwK8,The URL is detected as legitimate with a confidence of 81.00%.,Legitimate,81.0
+https://chatgpt.com/c/f2d0bcaa-4702-42a0-adc4-783a526c55cf,"The URL is detected as phishing with a confidence of 100.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,100.0
+www.google.com,The URL is detected as legitimate with a confidence of 83.71%.,Legitimate,83.71252008225686
+www.google.in,"The URL is detected as phishing with a confidence of 52.31%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,52.30521885521885
+google.in,"The URL is detected as phishing with a confidence of 88.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,88.0
+ww.akask.com,The URL is detected as legitimate with a confidence of 69.17%.,Legitimate,69.16860006533754
+w.akash.com,The URL is detected as legitimate with a confidence of 69.17%.,Legitimate,69.16860006533754
+www.amazon.com,The URL is detected as legitimate with a confidence of 100.00%.,Legitimate,100.0
+https://www.microsoft.com,"The URL is detected as phishing with a confidence of 84.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,84.0
+http://www.youtube.com/watch?v=6fF0JprSwK8,The URL is detected as legitimate with a confidence of 67.00%.,Legitimate,67.0
+www.bnmit.org,The URL is detected as legitimate with a confidence of 79.37%.,Legitimate,79.37294452043876
+google.in,"The URL is detected as phishing with a confidence of 88.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,88.0
+www.google.com,The URL is detected as legitimate with a confidence of 83.71%.,Legitimate,83.71252008225686
+www.chatgpt.com,The URL is detected as legitimate with a confidence of 71.70%.,Legitimate,71.69740055864878
+chatgpt.com,The URL is detected as legitimate with a confidence of 69.17%.,Legitimate,69.16860006533754
+http://www.bankofamerrica-login.com,"The URL is detected as phishing with a confidence of 98.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,98.0
+https://www.paypall-verify-account.net,"The URL is detected as phishing with a confidence of 63.00%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,63.0
+https://www.facebook-login-attempt-secure.com,"The URL is detected as phishing with a confidence of 98.67%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,98.66666666666667
+http://www.youtube.com/watch?v=6fF0JprSwK8,The URL is detected as legitimate with a confidence of 67.00%.,Legitimate,67.0
+https://www.youtube.com/watch?v=6fF0JprSwK8,The URL is detected as legitimate with a confidence of 81.00%.,Legitimate,81.0
+www.bnmit.org,The URL is detected as legitimate with a confidence of 79.37%.,Legitimate,79.37294452043876
+www.vtu.org,The URL is detected as legitimate with a confidence of 79.37%.,Legitimate,79.37294452043876
+www.amazon.com,The URL is detected as legitimate with a confidence of 100.00%.,Legitimate,100.0
+www.aksh.cm,The URL is detected as legitimate with a confidence of 51.69%.,Legitimate,51.68614332158549
+https://www.youtube.com/watch?v=6fF0JprSwK8,The URL is detected as legitimate with a confidence of 81.00%.,Legitimate,81.0
+www.google.com,The URL is detected as legitimate with a confidence of 83.71%.,Legitimate,83.71252008225686
+www.google,"The URL is detected as phishing with a confidence of 55.06%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,55.06490507925436
+https://www.bnmit.org,The URL is detected as legitimate with a confidence of 96.00%.,Legitimate,96.0
+www.vtu.org,The URL is detected as legitimate with a confidence of 79.37%.,Legitimate,79.37294452043876
+aksh.comh,"The URL is detected as phishing with a confidence of 87.02%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,87.02253504256491
+www.amazon.com,The URL is detected as legitimate with a confidence of 100.00%.,Legitimate,100.0
+www.amazon,"The URL is detected as phishing with a confidence of 55.86%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,55.85740848693954
+www.amazon..cmo,"The URL is detected as phishing with a confidence of 55.86%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,55.85740848693954
+www.microsoft.com,The URL is detected as legitimate with a confidence of 100.00%.,Legitimate,100.0
+https://www.amazon.org,The URL is detected as legitimate with a confidence of 80.00%.,Legitimate,80.0
+www.google.com,The URL is detected as legitimate with a confidence of 83.71%.,Legitimate,83.71252008225686
+http://www.example.com/index.html,The URL is detected as legitimate with a confidence of 75.00%.,Legitimate,75.0
+http://www.example.com/index.htmldibber,The URL is detected as legitimate with a confidence of 53.50%.,Legitimate,53.5
+https://i.airtel.in/XPPatb,"The URL is detected as phishing with a confidence of 95.80%. Common indicators include unusual subdomains, suspicious parameters, or known malicious patterns.",Phishing,95.7987324210128

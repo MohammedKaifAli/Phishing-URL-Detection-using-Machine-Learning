@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Final Year</title>
+</head>
+<body style="background-color: #93a6bb;">
+    <h1 style="padding-top: 5vh;font-family: 'Roboto Condensed'; font-size: 5em; font-weight: 700; text-align: center; letter-spacing: 2px; color: #660c0c;">Phishing detection</h1>
+
+    <div style=" padding: 10vh 10vh 10vh 10vh;">
+        <div class="container" style="background-color: #e3f2fd; padding: 5vh 10vh 10vh 10vh;">
+          <form method="POST" action="/">
+                <h3 class="mb-3">Phishing Link (URL CHECKER) </h3>
+                <p style="font-size: large;">
+                    Please paste your URL.
+                </p>
+                <div class="mb-3" style="background-color: #e3f2fd; padding: 0vh 0vh 5vh 0vh;">
+                    <input type="text" name="user_input" class="form-control form-control-lg" id="urlInput" placeholder="URL" style="height: 100px;">
+
+                    
+                </div>
+                <div style="padding-bottom: 5vh;">
+                    <button type="submit" class="btn btn-primary btn-lg float-end" style=" background-color: #45bcd1;  width: 250px; height: 50px; ;">Check</button>
+
+                </div>
+
+            </form>
+        </div>
+        
+
+        
+</div>
+    <h1 class="container text-center" style="padding: 20vh 0vh 4vh 0vh;">About Phishing URL Checker Tool</h1>
+    <div class="container">
+        <div class="row">
+          <div class="col" style="padding-left: 10vw; ">
+            <h2>Phishing URL Checker</h2>
+            <p style=" text-align: justify; color: rgb(11, 32, 53); font-size: 18px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;">
+        The phishing link and URL checker tool helps you detect malicious links in emails, text messages, and other online content. By scanning any links for suspicious patterns, our AI algorithm can determine if it’s a phishing scam or a legitimate source.<br><br>
+        
+        CSAI’s Phishing Link Checker ensures you don’t accidentally click on malicious links that could potentially lead to identity theft or financial loss. <br><br>
+        
+        Our phishing site checker analyzes the link and compares it to a database of known phishing websites. If the link is identified as suspicious, the tool will alert you and provide information on the original URL, redirected URL, and URL status.<br><br>
+        
+        EasyDMARC’s phishing link checker can help you avoid falling victim to phishing scams and keep your personal information secure.</p>
+          </div>
+          <div class="col">
+            <img src="{{ url_for('static', filename='email-sender.png') }}" class="card-img-top" alt="..." >
+          </div>
+        </div>
+    </div>
+    <h1 class="container text-center" style="padding: 10vh 10vh 2vh 10vh;">Types of Phishing</h1>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4"  style=" padding: 1vh 15vh 15vh 15vh;">
+      <div class="col">
+        <div class="card h-80">
+          <img src="{{ url_for('static', filename='sp.png') }}" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title">Spear Phishing</h5>
+            <p class="card-text">Targeted attack where attackers customize messages for specific individuals or organizations to increase credibility and success rates.</p>
+          </div>
+  
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80">
+          <img src="{{ url_for('static', filename='es.jpg') }}" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title">Phishing via Email Spoofing</h5>
+            <p class="card-text">Sending deceptive emails that appear to be from a legitimate source to trick recipients into revealing sensitive information or actions.</p>
+          </div>
+    
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80">
+          <img src="{{ url_for('static', filename='bec.jpeg') }}" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title">CEO Fraud or Business Email Compromise (BEC)</h5>
+            <p class="card-text">Impersonating company executives to request urgent wire transfers or sensitive information from employees.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80">
+          <img src="{{ url_for('static', filename='vv.png') }}" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title">Vishing (Voice Phishing):</h5>
+            <p class="card-text">Using phone calls or voice messages to deceive individuals into providing confidential information or performing actions.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col" >
+        <div class="card h-80">
+          <img src="{{ url_for('static', filename='sms.jpeg') }}" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title">Smishing (SMS Phishing)</h5>
+            <p class="card-text">Sending fraudulent text messages containing malicious links or requests for personal information to exploit mobile device users.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80">
+          <img src="{{ url_for('static', filename='p.jpg') }}" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title">Clone Phishing</h5>
+            <p class="card-text">Creating replicas of legitimate emails or websites with slight modifications to trick users into disclosing confidential data .</p>
+          </div>
+
+        </div>
+      </div>
+
+      </div>
+    </div>
+    <footer style="background-color: #f8f9fa; padding: 10px; text-align: center;">
+      <p>AKASH BANSAL  ||  MOHAMMED KAIF ALI  ||  ANKIT KUMAR JHA</p>
+  </footer>
+</body>
+</html>

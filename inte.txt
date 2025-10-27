@@ -1,0 +1,158 @@
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.feature_extraction.text import TfidfVectorizer
+import re
+from urllib.parse import urlparse
+
+# Load dataset
+dataset_path = 'dataset.csv'
+df = pd.read_csv(dataset.csv)
+
+# Basic preprocessing (handle missing values, normalize data)
+df = df.dropna()
+df['url'] = df['url'].str.lower()
+
+# Function to extract additional features from URLs
+def extract_features(df):
+    df['url_length'] = df['url'].apply(len)
+    df['num_dots'] = df['url'].apply(lambda x: x.count('.'))
+    df['num_hyphens'] = df['url'].apply(lambda x: x.count('-'))
+    df['num_underscores'] = df['url'].apply(lambda x: x.count('_'))
+    df['num_slashes'] = df['url'].apply(lambda x: x.count('/'))
+    df['num_question_marks'] = df['url'].apply(lambda x: x.count('?'))
+    df['num_equals'] = df['url'].apply(lambda x: x.count('='))
+    df['num_at_symbols'] = df['url'].apply(lambda x: x.count('@'))
+    df['num_and_symbols'] = df['url'].apply(lambda x: x.count('&'))
+    df['num_percent'] = df['url'].apply(lambda x: x.count('%'))
+    df['num_digits'] = df['url'].apply(lambda x: sum(c.isdigit() for c in x))
+    df['num_letters'] = df['url'].apply(lambda x: sum(c.isalpha() for c in x))
+    df['num_params'] = df['url'].apply(lambda x: len(urlparse(x).query.split('&')))
+    df['hostname_length'] = df['url'].apply(lambda x: len(urlparse(x).netloc))
+    df['path_length'] = df['url'].apply(lambda x: len(urlparse(x).path))
+    df['has_https'] = df['url'].apply(lambda x: int(x.startswith('https')))
+    df['has_www'] = df['url'].apply(lambda x: int('www.' in x))
+    df['is_ip'] = df['url'].apply(lambda x: int(re.match(r'(\d{1,3}\.){3}\d{1,3}', urlparse(x).netloc) is not None))
+    return df
+
+# Extract features
+df = extract_features(df)
+
+# Use TF-IDF for text features
+tfidf = TfidfVectorizer(max_features=1000, stop_words='english')
+tfidf_features = tfidf.fit_transform(df['url']).toarray()
+tfidf_feature_names = tfidf.get_feature_names_out()
+
+# Combine features into a DataFrame
+features_df = pd.DataFrame(tfidf_features, columns=tfidf_feature_names)
+additional_features = df[['url_length', 'num_dots', 'num_hyphens', 'num_underscores', 'num_slashes', 
+                          'num_question_marks', 'num_equals', 'num_at_symbols', 'num_and_symbols', 
+                          'num_percent', 'num_digits', 'num_letters', 'num_params', 'hostname_length', 
+                          'path_length', 'has_https', 'has_www', 'is_ip']]
+features_df = pd.concat([features_df, additional_features], axis=1)
+
+# Standardize features
+scaler = StandardScaler()
+scaled_features = scaler.fit_transform(features_df)
+
+# Split data
+X = scaled_features
+y = df['class']
+X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.3, random_state=42)
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout, LSTM, Embedding, Bidirectional
+
+# Assuming the URLs are tokenized and transformed to sequences
+# Tokenization and sequence padding
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+
+# Tokenize the URLs
+tokenizer = Tokenizer()
+tokenizer.fit_on_texts(df['url'])
+sequences = tokenizer.texts_to_sequences(df['url'])
+
+# Pad sequences to ensure uniform length
+max_len = 100  # Adjust based on data
+X_sequences = pad_sequences(sequences, maxlen=max_len)
+
+# Split the sequence data
+X_train_seq, X_val_seq, y_train_seq, y_val_seq = train_test_split(X_sequences, y, test_size=0.3, random_state=42)
+
+# Define the CNN-RNN hybrid model
+vocab_size = len(tokenizer.word_index) + 1  # Vocabulary size
+embedding_dim = 50  # Embedding dimension
+
+model = Sequential([
+    Embedding(input_dim=vocab_size, output_dim=embedding_dim, input_length=max_len),
+    Conv1D(filters=128, kernel_size=5, activation='relu'),
+    MaxPooling1D(pool_size=2),
+    Dropout(0.5),
+    Bidirectional(LSTM(64)),
+    Dense(64, activation='relu'),
+    Dropout(0.5),
+    Dense(1, activation='sigmoid')
+])
+
+model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+
+# Train the model
+model.fit(X_train_seq, y_train_seq, epochs=10, batch_size=32, validation_data=(X_val_seq, y_val_seq))
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
+from sklearn.naive_bayes import GaussianNB
+
+# Train Random Forest
+rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
+rf_model.fit(X_train, y_train)
+
+# Train SVM
+svm_model = SVC(probability=True, random_state=42)
+svm_model.fit(X_train, y_train)
+
+# Train Naive Bayes
+nb_model = GaussianNB()
+nb_model.fit(X_train, y_train)
+# Get predictions from the CNN-RNN model
+cnn_rnn_train_preds = model.predict(X_train_seq).flatten()
+cnn_rnn_val_preds = model.predict(X_val_seq).flatten()
+
+# Get predictions from the traditional models
+rf_train_preds = rf_model.predict_proba(X_train)[:, 1]
+rf_val_preds = rf_model.predict_proba(X_val)[:, 1]
+
+svm_train_preds = svm_model.predict_proba(X_train)[:, 1]
+svm_val_preds = svm_model.predict_proba(X_val)[:, 1]
+
+nb_train_preds = nb_model.predict_proba(X_train)[:, 1]
+nb_val_preds = nb_model.predict_proba(X_val)[:, 1]
+# Combine predictions into a new feature set
+train_meta_features = pd.DataFrame({
+    'cnn_rnn': cnn_rnn_train_preds,
+    'rf': rf_train_preds,
+    'svm': svm_train_preds,
+    'nb': nb_train_preds
+})
+
+val_meta_features = pd.DataFrame({
+    'cnn_rnn': cnn_rnn_val_preds,
+    'rf': rf_val_preds,
+    'svm': svm_val_preds,
+    'nb': nb_val_preds
+})
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+
+# Train a logistic regression model as a meta-classifier
+meta_model = LogisticRegression(random_state=42)
+meta_model.fit(train_meta_features, y_train)
+
+# Evaluate the meta-classifier
+meta_val_preds = meta_model.predict(val_meta_features)
+
+print(f"Meta Accuracy: {accuracy_score(y_val, meta_val_preds)}")
+print(f"Meta Precision: {precision_score(y_val, meta_val_preds)}")
+print(f"Meta Recall: {recall_score(y_val, meta_val_preds)}")
+print(f"Meta F1 Score: {f1_score(y_val, meta_val_preds)}")
