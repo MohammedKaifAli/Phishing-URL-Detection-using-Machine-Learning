@@ -3,6 +3,9 @@ import os
 import csv
 import joblib
 import numpy as np
+import joblib
+joblib.dump(model, "phishing_detection_model.pkl")
+
 
 app = Flask(__name__)
 app.config['STATIC_FOLDER'] = 'static'
