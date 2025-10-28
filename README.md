@@ -33,5 +33,4 @@ The web interface is built with **Flask** and allows users to input a URL and in
 
 ---
 
-## 📂 Project Structure
 
